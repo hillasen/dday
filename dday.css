@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient( to bottom, #120136, #035aa6);
+}
+.main_text{
+    animation-duration: 1.5s;
+    animation-name: first_view;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+    text-align: center;
+}
+.name{
+    opacity: 0;
+    font-family: 'Sunflower', sans-serif;
+    color: white;
+    text-align: center;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-name: second_view;
+}
+
+.main_view{
+    margin-left: auto;
+    align-items: center;
+    margin-top: 20%;
+}
+
+
+@keyframes first_view {
+    from {
+      margin-top: 30%;
+    }
+  
+    to {
+      margin-top: 20%;
+    }
+  }
+  @keyframes second_view {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
